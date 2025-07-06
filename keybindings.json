@@ -1,6 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
-    // file tree
+    // file tree troo
     {
         "key": "n",
         "command": "explorer.newFile",
