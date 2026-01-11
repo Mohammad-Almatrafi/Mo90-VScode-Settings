@@ -1,45 +1,69 @@
 // Place your key bindings in this file to override the defaults
 [
-    // file tree troo
-    {
-        "key": "n",
-        "command": "explorer.newFile",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "command": "renameFile",
-        "key": "r",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
-    },
-    {
-        "command": "deleteFile",
-        "key": "d",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "key": "",
-        "commands": "editor.action.outdentLines"
-    },
-    {
-        "key": "",
-        "commands": "editor.action.indentLines"
-    },
-    {
-        "command": "workbench.action.toggleActivityBarVisibility",
-        "key": "ctrl+a"
-    },
-    {
-        "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+e",
-    },
-    // {
-    //     "command": "workbench.files.action.focusFilesExplorer",
-    //     "key": "ctrl+e",
-    //     "when": "editorTextFocus"
-    // },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "",
+    "commands": "editor.action.outdentLines"
+  },
+  {
+    "key": "",
+    "commands": "editor.action.indentLines"
+  },
+  {
+    "command": "workbench.action.toggleActivityBarVisibility",
+    "key": "ctrl+a"
+  },
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "!(filesExplorerFocus && !inputFocus)"
+  },
+  {
+    "command": "-workbench.action.quickOpen",
+    "key": "ctrl+e",
+  },
+  {
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "key": "ctrl+e",
+  },
+  {
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "key": "ctrl+e",
+  }
 ]

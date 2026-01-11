@@ -1,27 +1,21 @@
 {
-  "git.ignoreMissingGitWarning": true,
-  "workbench.iconTheme": "vscode-icons",
-  "vsicons.dontShowNewVersionMessage": true,
-  "background.windowBackgrounds": ["d:/hatsune/wallpaper/**"],
-  "hediet.vscode-drawio.resizeImages": null,
-  "editor.cursorBlinking": "solid",
-  "background.backgroundOpacity": [0.95, 0.1, 0.1, 0.1],
-  "editor.fontFamily": "'JetBrains Mono'",
-  "editor.fontLigatures": true,
+  // editor indentation and spacerender settings
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.lineHeight": 1.75,
+  "editor.renderWhitespace": "boundary",
+
+  "editor.fontFamily": "'Hack Nerd Font Mono'",
   "editor.minimap.enabled": false,
   "cmake.showOptionsMovedNotification": false,
-  "workbench.editorAssociations": {
-    "{git,gitlens}:/**/*.{md,csv,svg}": "default"
-  },
-  "remote.autoForwardPortsSource": "hybrid",
-  "git.openRepositoryInParentFolders": "always",
-  "background.useInvertedOpacity": true,
   "breadcrumbs.enabled": false,
-  "editor.renderWhitespace": "all",
-  "workbench.colorTheme": "pink theme",
+  "workbench.colorTheme": "Bearded Theme Black & Diamond",
   "editor.lineNumbers": "relative",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
+  "workbench.sideBar.location": "right",
+  "liveServer.settings.CustomBrowser": "chrome",
   "vim.normalModeKeyBindingsNonRecursive": [
     //nice to have
     {
@@ -39,11 +33,6 @@
     {
       "before": ["leader", "x"],
       "commands": [":x!"]
-    },
-    //navigation and file tree
-    {
-      "before": ["leader", "e"],
-      "commands": ["workbench.files.action.focusFilesExplorer"]
     },
     {
       "before": ["leader", "f"],
@@ -92,10 +81,6 @@
       "commands": [":x!"]
     },
     //navigation and file tree
-    {
-      "before": ["leader", "e"],
-      "commands": ["workbench.files.action.focusFilesExplorer"]
-    },
     {
       "before": ["leader", "f"],
       "commands": ["workbench.action.quickOpen"]
@@ -149,18 +134,45 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
+    "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.tabSize": 4,
   "[sass][javascript]": {
     "editor.tabSize": 2
   },
-  "editor.lineHeight": 1.75,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "liveServer.settings.CustomBrowser": "chrome",
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  }
+  "workbench.colorCustomizations": {},
+  "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "material-icon-theme",
+  "[systemverilog]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "eirikpre.systemverilog"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "editor.stickyScroll.enabled": false,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "editor.renderControlCharacters": false,
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/Thumbs.db": false
+  },
+  "editor.fontSize": 18,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "NOTE",
+    "LEGACY"
+  ]
 }
